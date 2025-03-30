@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Diamond {
   public static void main(String[] args) {
-    int dimensions;
+    int dimensions = 0;
     boolean isValid = false;
 
     Scanner scan = new Scanner(System.in);
@@ -27,5 +27,18 @@ public class Diamond {
     }
 
     scan.close();
+    System.out.println();
+
+    if ((dimensions % 2) != 0) {
+      for (int i = 0; i < dimensions; i++) {
+
+      }
+    }
+
+    else {
+      for (int i = 0; i < dimensions; i++) {
+
+      }
+    }
   }
 }
