@@ -29,16 +29,22 @@ public class Diamond {
     scan.close();
     System.out.println();
 
-    if ((dimensions % 2) != 0) {
-      for (int i = 0; i < dimensions; i++) {
+    if (dimensions != 1) {
+      if ((dimensions % 2) != 0) {
+        for (int i = 0; i < dimensions; i++) {
 
+        }
       }
-    }
 
-    else {
-      for (int i = 0; i < dimensions; i++) {
+      else {
+        for (int i = 0; i < dimensions; i++) {
 
+        }
       }
+
+    } else {
+      System.out.println("*");
+      System.out.println();
     }
   }
 }
