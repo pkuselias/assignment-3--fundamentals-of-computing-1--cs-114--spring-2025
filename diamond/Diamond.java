@@ -2,9 +2,29 @@ import java.util.Scanner;
 
 public class Diamond {
   public static void main(String[] args) {
+    int dimensions;
+    boolean isValid = false;
+
     Scanner scan = new Scanner(System.in);
 
-    System.out.printf("/nEnter a positive integer: ");
+    System.out.printf("\nEnter a positive integer: ");
+
+    while (!isValid) {
+      if (scan.hasNextInt()) {
+        dimensions = scan.nextInt();
+        isValid = true;
+
+        if (dimensions < 1) {
+          isValid = false;
+          System.out.printf("\nInvalid input. Please enter a positive integer: ");
+          scan.nextLine();
+        }
+
+      } else {
+        System.out.printf("\nInvalid input. Please enter a positive integer: ");
+        scan.nextLine();
+      }
+    }
 
     scan.close();
   }
