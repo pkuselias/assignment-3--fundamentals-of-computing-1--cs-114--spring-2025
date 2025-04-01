@@ -67,12 +67,60 @@ public class Diamond {
           starNumber -= 2;
           lines -= 2;
         }
+
+        System.out.println();
       }
 
     } else {
-      for (int i = 0; i < dimensions; i++) {
+      String space = " ", star = " *", finalSpaces, finalStars;
+      int spacesNumber = dimensions - 2;
+      int starNumber = 2;
+      int lines = dimensions - 1;
 
+      for (int a = 1; a <= dimensions; a++) {
+        System.out.print(space);
       }
+
+      System.out.println(star);
+
+      for (int i = 0; i < (dimensions - 1); i++) {
+        finalSpaces = "";
+
+        if (spacesNumber > 0) {
+          for (int j = 0; j <= (spacesNumber); j++) {
+            finalSpaces += space;
+          }
+
+        } else {
+          for (int j = 0; j <= (-1 * spacesNumber); j++) {
+            finalSpaces += space;
+          }
+        }
+
+        finalStars = "";
+
+        for (int k = 0; k < starNumber; k++) {
+          finalStars += star;
+        }
+
+        System.out.println(finalSpaces + finalStars);
+
+        spacesNumber -= 2;
+
+        if (starNumber < lines) {
+          starNumber += 2;
+
+        } else {
+          starNumber -= 2;
+          lines -= 2;
+        }
+      }
+
+      for (int b = 0; b <= dimensions; b++) {
+        System.out.print(" ");
+      }
+
+      System.out.println("*");
     }
 
     System.out.println();
