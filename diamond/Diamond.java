@@ -72,7 +72,7 @@ public class Diamond {
       }
 
     } else {
-      String space = " ", star = " *", finalSpaces, finalStars;
+      String space = " ", star = " *", finalSpaces, finalStars; // Different star string for even inputs
       int spacesNumber = dimensions - 2;
       int starNumber = 2;
       int lines = dimensions - 1;
@@ -81,13 +81,13 @@ public class Diamond {
         System.out.print(space);
       }
 
-      System.out.println(star);
+      System.out.println(star); // First and last star with different alignment
 
       for (int i = 0; i < (dimensions - 1); i++) {
         finalSpaces = "";
 
-        if (spacesNumber > 0) {
-          for (int j = 0; j <= (spacesNumber); j++) {
+        if (spacesNumber >= 0) {
+          for (int j = 0; j <= spacesNumber; j++) {
             finalSpaces += space;
           }
 
