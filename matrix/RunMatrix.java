@@ -37,6 +37,8 @@ public class RunMatrix {
 
   matrix = new Matrix(size);
 
+  System.out.printf("Default matrix:\n\n");
+
   matrix.printMatrix();
   }
 }
