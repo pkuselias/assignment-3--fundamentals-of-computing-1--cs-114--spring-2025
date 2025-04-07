@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class RunMatrix {
   public static void main(String[] args) {
     int size = 0;
+    Matrix matrix;
     boolean isValid = false;
 
     Scanner scan = new Scanner(System.in);
@@ -33,5 +34,8 @@ public class RunMatrix {
   System.out.printf("Your matrix is %d x %d\n", size, size);
 
   System.out.println();
+
+  matrix = new Matrix(size);
+
   }
 }
