@@ -6,12 +6,12 @@ public class Matrix {
   }
 
   public void printMatrix() {
-    for (int i = 0; i < matrix.length; i++) {
-      for (int j = 0; j < matrix[i].length; j++) {
-        if ((i + j) == (matrix.length - 1)) {
-          System.out.printf("\t\u001B[33m%d\u001B[0m", matrix[i][j]);
+    for (int row = 0; row < matrix.length; row++) {
+      for (int col = 0; col < matrix[row].length; col++) {
+        if ((row + col) == (matrix.length - 1)) {
+          System.out.printf("\t\u001B[33m%d\u001B[0m", matrix[row][col]);
         } else {
-          System.out.printf("\t%d", matrix[i][j]);
+          System.out.printf("\t%d", matrix[row][col]);
         }
       }
 
