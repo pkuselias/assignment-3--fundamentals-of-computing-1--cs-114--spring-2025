@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class RunMatrix {
   public static void main(String[] args) {
-    int size;
+    int size = 0;
     boolean isValid = false;
 
     Scanner scan = new Scanner(System.in);
@@ -26,10 +26,12 @@ public class RunMatrix {
       }
     }
 
-    scan.close();
+  scan.close();
 
-    System.out.println();
+  System.out.println();
 
+  System.out.printf("Your matrix is %d x %d\n", size, size);
 
+  System.out.println();
   }
 }
