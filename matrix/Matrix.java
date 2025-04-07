@@ -37,4 +37,15 @@ public class Matrix {
     matrix[x1][y1] = secondElement;
     matrix[x2][y2] = firstElement;
   }
+
+  public void flipMatrix() {
+    for (int row = 0; row < matrix.length; row++) {
+      for (int col = 0; col < matrix[row].length; col++) {
+        if ((row + col) < (matrix.length - 1)) {
+          swap(row, col, (matrix.length - row - 1), (matrix.length - col - 1));
+        }
+      }
+    }
+  }
+
 }

@@ -43,5 +43,9 @@ public class RunMatrix {
   matrix.populateMatrix();
   System.out.printf("Populated matrix:\n\n");
   matrix.printMatrix();
+
+  matrix.flipMatrix();
+  System.out.printf("Flipped matrix:\n\n");
+  matrix.printMatrix();
   }
 }
