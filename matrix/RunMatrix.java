@@ -37,5 +37,6 @@ public class RunMatrix {
 
   matrix = new Matrix(size);
 
+  matrix.printMatrix();
   }
 }
