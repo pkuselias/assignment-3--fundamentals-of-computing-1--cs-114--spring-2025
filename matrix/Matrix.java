@@ -30,4 +30,11 @@ public class Matrix {
       }
     }
   }
+
+  private void swap(int x1, int y1, int x2, int y2) {
+    int firstElement = matrix[x1][y1];
+    int secondElement = matrix[x2][y2];
+    matrix[x1][y1] = secondElement;
+    matrix[x2][y2] = firstElement;
+  }
 }
