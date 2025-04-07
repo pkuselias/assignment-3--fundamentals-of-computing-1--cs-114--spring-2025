@@ -31,11 +31,10 @@ public class RunMatrix {
 
   System.out.println();
 
+  matrix = new Matrix(size);
   System.out.printf("Your matrix is %d x %d\n", size, size);
 
   System.out.println();
-
-  matrix = new Matrix(size);
 
   System.out.printf("Default matrix:\n\n");
   matrix.printMatrix();
