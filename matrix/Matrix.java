@@ -5,6 +5,7 @@ public class Matrix {
 
   public Matrix(int size) {
     matrix = new int[size][size];
+    System.out.printf("Your matrix is %d x %d\n", size, size);
   }
 
   public void printMatrix() {
